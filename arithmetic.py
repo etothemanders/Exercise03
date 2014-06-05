@@ -9,7 +9,10 @@ def multiply(num1, num2):
     return num1 * num2
 
 def divide(num1, num2):
-    return float(num1)/float(num2)
+    if num2 == 0:
+        return "Cannot divide by zero."
+    else:
+        return float(num1)/float(num2)
 
 def square(num1):
     return num1**2
